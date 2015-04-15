@@ -93,7 +93,7 @@ namespace LSE_MaxExecutableVolume
             return maxExecutableVolumeOrders;
         }
 
-        private static List<Order> GetMinSurplus(List<Order> maxExecutableVolumeOrders)
+        private static List<Order> GetMinSurplus(IReadOnlyCollection<Order> maxExecutableVolumeOrders)
         {
             var minSurplusOrders = new List<Order>();
             var minSurplusVolume =
